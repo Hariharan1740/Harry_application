@@ -37,7 +37,7 @@ static struct file_operations led_ops=
 	.open= led_dev_open,
 	.read= led_dev_read,
 	.write= led_dev_write,
-	.release= led_dev_release,
+	.release= led_dev_release:
 };
 
 static int led_dev_open(struct inode *led_inode, struct file *file)
